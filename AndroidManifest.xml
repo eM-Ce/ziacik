@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ziacik"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Matematika"
+            android:label="@string/math" >
+            <intent-filter>
+                <action android:name="android.intent.action.Matematika" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Choose"
+            android:label="@string/title_activity_choose" >
+            <intent-filter>
+                <action android:name="com.example.ziacik.Choose" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Anglictina"
+            android:label="@string/title_activity_english" >
+            <intent-filter>
+                <action android:name="android.intent.action.Anglictina" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PridajSlovicka"
+            android:label="@string/title_activity_pridaj_slovicka" >
+        </activity>
+        <activity
+            android:name=".UpravSlovicka"
+            android:label="@string/title_activity_uprav_slovicka" >
+        </activity>
+    </application>
+
+</manifest>
