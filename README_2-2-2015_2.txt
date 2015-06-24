@@ -1,0 +1,56 @@
+iaèik
+V aktuálna verzia obsahuje:
+-testovanie matematiky na základe aktuálnej zruènosti iaka
+-pridávanie a upravovanie pridanıch slovíèok
+-testovanie angliètiny
+
+Zmeny oproti predošlej verzií:
+-Pridaná podpora Androidu 5.0
+-Prerobené ukladanie slovíèok (Predtım sa ukladali do súboru, teraz pouítím databázy SQLite)
+-Pridaná funkcionalita pamätania si poètu správnych/nesprávnych odpovedí pre slovíèka
+-Pridaná monos editovania slovíèok (Krátke stlaèenie na editovanie a dlhé na vymazanie.
+Po vymazaní všetkıch slovíèok z kategórie sa daná kategória tie vymae.)
+-Ošetrené zadávanie prázdnych políèok pri pridávaní slovíèok
+
+Popis fungovania algoritmu pre angliètinu:
+Na zaèiatku si pouívate¾ vyberie, èi sa chce necha preskúša zo všetkıch slov alebo iba z niektorej kategórie.
+Slovíèka sa z databázy vyberajú usporiadané pod¾a poètu správnych odpovedí a posledného preskúšania.
+Po zadaní a potvrdení prekladu práve skúšaného slovíèka sa upraví pod¾a odpovede poèet správnych/nesprávnych zodpovedaní a èas posledného preskúšania.
+Skúšanie skonèí, keï aplikácia vyskúša všetky vybraté slová alebo po stlaèení tlaèidla back.
+
+Popis fungovania algoritmu pre matematiku:
+Aplikácia si pamätá 5 parametrov: celkovú úroveò, úroveò sèítania,
+úroveò odèítania, úroveò násobenia a úroveò delenia.
+Po kadom úspešne vyriešenom príklade sa zvıši celková úroveò a úroveò operácie, ktorá bola pouitá v príklade. Na generovanie operandov aj operácie vyuívam štandardnú kniniènú funkciu Random.
+
+Operácia sa vyberá pod¾a nasledovnıch údajov:
+celková úroveò < 40 : sèítanie
+40 <= celková úroveò < 80 : sèítanie, odèítanie
+80 <= celková úroveò < 160 : sèítanie, odèítanie, násobenie
+160 < celková úroveò : sèítanie, odèítanie, násobenie, delenie
+
+Pre sèítanie sa maximum operandov vyberá nasledovne:
+úroveò sèítanie <=0 : 10
+0 < úroveò sèitanie < 90 : úroveò sèítanie + 10
+90 <= úroveò sèitanie: 100
+
+Pre odèítanie sa maximum operandov vyberá nasledovne:
+úroveò odèítanie <=0 : 10
+0 < úroveò odèítanie < 90 : úroveò odèítanie + 10
+0 < úroveò odèítanie < 40 : pre druhı operand je maximum prvı operand
+90 <= úroveò odèítanie: 100
+
+Pre násobenie sa maximum operandov vyberá nasledovne:
+úroveò násobenia <=0 : 5
+0 < úroveò násobenie < 75 : (úroveò násobenie / 5) + 5
+75 <= úroveò násobenie: 20
+
+Delenie sa generuje trochu odlišne, aby sa bola zaruèená delite¾nos operandov.
+Vyberú sa dve èísla. Prvı operand je násobkom tıchto èísel a druhı operand je druhé vybrané èíslo.
+Pre tieto èísla sa maximum vyberá nasledovne:
+úroveò delenia <=0 : max1 = 3
+                     max2 = 5
+0 < úroveò delenia < 75 : max1 = (úroveò delenia / 10) + 3
+                          max2 = (úroveò delenia / 5) + 5
+75 <= úroveò delenia: max1 = 10
+                      max2 = 20

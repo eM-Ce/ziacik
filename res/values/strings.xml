@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Žiačik</string>
+    <string name="math">Matematika</string>
+    <string name="action_settings">Nastavenia</string>
+    <string name="zmenaProfilu">Zmeniť profil</string>
+    <string name="krat">X</string>
+    <string name="vysledok">Výsledok</string>
+    <string name="enter">Potvrdiť</string>
+    <string name="start">Začať</string>
+    <string name="vybrat">Vybrať</string>
+    <string name="pauza">Pauza</string>
+    <string name="napoveda">Nápoveda</string>
+    <string name="title_activity_choose">Žiačik</string>
+    <string name="preklad">Preklad</string>
+    <string name="anglicky">Anglicky</string>
+    <string name="slovensky">Slovensky</string>
+    <string name="title_activity_english">Angličtina</string>
+    <string name="operand">Operand</string>
+    <string name="meno_suboru">Meno kategórie</string>
+    <string name="title_activity_pridaj_slovicka">Pridaj/uprav slovíčka</string>
+    <string name="instrukcia_slovicka">Slovíčka zadávajte po jednom, vľavo po anglicky a vpravo po slovensky</string>
+    <string name="limit">časový limit</string>
+    <string name="pocetslovicok">počet slovíčok</string>
+    <string name="pocetprikladov">počet príkladov</string>
+    <string name="hodnotyoperandov">maximálne hodnoty operandov</string>
+    <string name="scitanie">sčítanie</string>
+    <string name="odcitanie">odčítanie</string>
+    <string name="zaornyvysledok">záporný výsledok</string>
+    <string name="nasobenie">násobenie</string>
+    <string name="delenie">delenie</string>
+    <string name="resetM">Reset databázy</string>
+    <string name="labelNamesSettings">Deti</string>
+    <string name="pridajDieta">Pridať ďieťa</string>
+    <string name="vymazDieta">Vymazať ďieťa</string>
+    <string name="statistikyDieta">Štatistiky ďieťaťa</string>
+    <string name="vyberanie">Výber</string>
+
+    <string-array name="listofallactivities">
+        <item>Matematika</item>
+        <item>Angličtina</item>
+        <item>Pridaj/Uprav Slovíčka</item>
+    </string-array>
+
+    <string name="title_activity_uprav_slovicka">Uprav Slovíčka</string>
+    <string name="vyber">Otvoriť</string>
+    <string name="title_activity_rodic_nastavenia">Nastavenia</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_statistiky">Statistiky</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+
+</resources>

@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ziacik.UpravSlovicka" >
+
+    <Button
+        android:id="@+id/Uprav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/vyber" />
+
+    <Spinner
+        android:id="@+id/Subory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Uprav"
+        android:layout_marginLeft="11dp"
+        android:layout_toRightOf="@+id/Uprav" />
+
+    <TextView
+        android:id="@+id/instrukcia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Uprav"
+        android:layout_below="@+id/Subory"
+        android:layout_marginTop="16dp"
+        android:text="@string/instrukcia_slovicka"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/Anglicky"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/instrukcia"
+        android:layout_below="@+id/instrukcia"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:visibility="invisible" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/PridatSlovicka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Anglicky"
+        android:layout_below="@+id/Anglicky"
+        android:layout_marginTop="20dp"
+        android:onClick="save"
+        android:text="@string/enter"
+        android:visibility="invisible" />
+
+</RelativeLayout>

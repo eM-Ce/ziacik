@@ -1,0 +1,284 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ziacik.RodicNastavenia" >
+    
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/labelAnglictinaSet"
+        android:layout_marginTop="93dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/labelLimitAJ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelAnglictinaSet"
+        android:layout_below="@+id/labelAnglictinaSet"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/limit"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/labelAnglictinaSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="29dp"
+        android:text="@string/title_activity_english"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/labelPocetSlovicok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelLimitAJ"
+        android:layout_below="@+id/labelLimitAJ"
+        android:layout_marginTop="17dp"
+        android:text="@string/pocetslovicok"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/labelLimitM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelPocetSlovicok"
+        android:layout_below="@+id/labelMatematikaSet"
+        android:layout_marginTop="16dp"
+        android:text="@string/limit"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/labelPocetPrikladov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelLimitM"
+        android:layout_below="@+id/labelLimitM"
+        android:layout_marginTop="16dp"
+        android:text="@string/pocetprikladov"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/labelHodnotyOperandov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelPocetPrikladov"
+        android:layout_below="@+id/labelPocetPrikladov"
+        android:layout_marginTop="16dp"
+        android:text="@string/hodnotyoperandov"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/labelMaxScitanie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelHodnotyOperandov"
+        android:layout_below="@+id/labelHodnotyOperandov"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/scitanie"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/labelMaxOdcitanie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelMaxScitanie"
+        android:layout_below="@+id/labelMaxScitanie"
+        android:layout_marginTop="16dp"
+        android:text="@string/odcitanie"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/labelMaxDelenie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelMaxNasobenie"
+        android:layout_below="@+id/labelMaxNasobenie"
+        android:layout_marginTop="16dp"
+        android:text="@string/delenie"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <CheckBox
+        android:id="@+id/checkZapoVysledok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelMaxOdcitanie"
+        android:layout_below="@+id/labelMaxOdcitanie"
+        android:layout_marginLeft="27dp"
+        android:text="@string/zaornyvysledok" />
+
+    <TextView
+        android:id="@+id/labelMaxNasobenie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelMaxOdcitanie"
+        android:layout_below="@+id/checkZapoVysledok"
+        android:layout_marginTop="11dp"
+        android:text="@string/nasobenie"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/labelMatematikaSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/labelLimitM"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="21dp"
+        android:text="@string/math"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editLimitAJ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labelLimitAJ"
+        android:layout_alignBottom="@+id/labelLimitAJ"
+        android:layout_toRightOf="@+id/labelPocetPrikladov"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editLimitM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editPocetM"
+        android:layout_alignLeft="@+id/editPocetAJ"
+        android:layout_marginLeft="27dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editScitanie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labelMaxScitanie"
+        android:layout_alignBottom="@+id/labelMaxScitanie"
+        android:layout_alignLeft="@+id/editPocetM"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editOdcitanie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editScitanie"
+        android:layout_below="@+id/editScitanie"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editPocetM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/labelHodnotyOperandov"
+        android:layout_alignLeft="@+id/editLimitM"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editNasobenie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labelMaxNasobenie"
+        android:layout_alignBottom="@+id/labelMaxNasobenie"
+        android:layout_alignLeft="@+id/editOdcitanie"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editDelenie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editNasobenie"
+        android:layout_below="@+id/editNasobenie"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editPocetAJ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labelPocetSlovicok"
+        android:layout_alignBottom="@+id/labelPocetSlovicok"
+        android:layout_toRightOf="@+id/labelPocetPrikladov"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Spinner
+        android:id="@+id/spinnerDeti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/labelAnglictinaSet"
+        android:layout_alignRight="@+id/view1"
+        android:layout_toRightOf="@+id/editLimitAJ" />
+
+    <Button
+        android:id="@+id/ResetMathButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labelMatematikaSet"
+        android:layout_alignBottom="@+id/labelMatematikaSet"
+        android:layout_alignLeft="@+id/editLimitM"
+        android:text="@string/resetM" />
+
+    <View
+        android:id="@+id/View01"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/labelMaxDelenie"
+        android:layout_marginTop="27dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/labelEditNames"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelAnglictinaSet"
+        android:layout_below="@+id/View01"
+        android:layout_marginTop="20dp"
+        android:text="@string/labelNamesSettings"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/PriadjDietaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelEditNames"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/labelEditNames"
+        android:text="@string/pridajDieta" />
+
+    <Button
+        android:id="@+id/VymazDietaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/PriadjDietaButton"
+        android:layout_below="@+id/PriadjDietaButton"
+        android:layout_marginTop="18dp"
+        android:text="@string/vymazDieta" />
+
+    <Button
+        android:id="@+id/StatistikyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/VymazDietaButton"
+        android:layout_marginTop="22dp"
+        android:layout_toRightOf="@+id/labelEditNames"
+        android:text="@string/statistikyDieta" />
+
+</RelativeLayout>
